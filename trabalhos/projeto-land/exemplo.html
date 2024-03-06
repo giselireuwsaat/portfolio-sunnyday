@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo tag semantica</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        input{
+            background-color: darkgray;
+        }
+
+        input:focus{
+            background-color:darkcyan;
+        }
+
+        input:hover{
+            background-color:yellow;
+        }
+
+        .container{
+            border: 3px solid black;
+        }
+
+        .um{
+            background-color: yellow;
+            display: inline-block;
+            padding: 20px;
+            width: 49%;
+        }
+
+        .dois{
+            background-color: orange;
+            display: inline-block;
+            padding: 20px;
+            width: 49%;
+        }
+
+        .tres{
+            background-color: red;
+        }
+
+        .box{
+            margin: 30px;
+            height: 100px;
+            border: 3px dotted purple;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <p> <abbr title="World Wide Web Consortium">W3C</abbr> - Lorem, <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit. Quaerat dignissimos nisi dolor illum alias, laboriosam consectetur, amet facere fuga voluptas unde. Quis, magnam perspiciatis. Corporis voluptatem consequatur dicta ducimus id!</p>
+    <p><cite>Lorem, ipsum dolor</cite> sit amet consectetur <em>adipisicing</em> elit. Quaerat dignissimos nisi dolor illum alias, laboriosam consectetur, amet facere fuga voluptas unde. Quis, magnam perspiciatis. Corporis voluptatem consequatur dicta ducimus id!</p>
+    <p><mark>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</mark> Quaerat dignissimos nisi dolor illum alias, laboriosam consectetur, amet facere fuga voluptas unde. Quis, magnam perspiciatis. Corporis voluptatem consequatur dicta ducimus id!</p>
+
+    <hr/>
+
+    <h2>Exemplo de formulário</h2>
+
+    <form>
+        <label for="pass">Password</label><br>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <label for="curso">Curso</label> <br>
+        <input type="radio" name="curso" id="fullstack" value="Full Stack" checked/> 
+        <label for="fullstack">Full Stack</label>
+        <br>
+        <input type="radio" name="curso" id="marketing" value="Marketing" />
+        <label for="marketing">Marketing</label>
+        <br>
+        <br>
+        <label for="diaSemana">Dia da Semana</label> <br>
+        <input type="checkbox" name="diaSemana[]" id="segunda" value="Segunda-feira" checked>
+        <label for="segunda">Segunda-feira</label>
+        <br>
+        <input type="checkbox" name="diaSemana[]" id="terca" value="Terça-feira">
+        <label for="terca">Terça-feira</label>
+        <br>
+        <input type="checkbox" name="diaSemana[]" id="quarta" value="Quarta-feira">
+        <label for="quarta">Quarta-feira</label>
+        <br>
+        <br>
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option selected disabled>Selecione um País</option>
+            <option value="BR">Brasil - BR</option>
+            <option value="AR">Argentina - AR</option>
+            <option value="OZ">Osasco - OZ</option>
+        </select>
+        <br>
+        <br>
+        <label for="mensagem">Mensagem</label><br>
+        <textarea name="mensagem" id="mensagem" cols="20" rows="10"></textarea>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <h2>Exemplo Display</h2>
+
+    <div class="container">
+        <span class="um">1</span>
+        <span class="dois">2</span>
+        <div class="tres">3</div>
+    </div>
+
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum iusto consequatur illo harum delectus quidem officia magni, quasi corrupti commodi quo, nesciunt vitae aut vero tempora ex excepturi repellendus a?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum iusto consequatur illo harum delectus quidem officia magni, quasi corrupti commodi quo, nesciunt vitae aut vero tempora ex excepturi repellendus a?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum iusto consequatur illo harum delectus quidem officia magni, quasi corrupti commodi quo, nesciunt vitae aut vero tempora ex excepturi repellendus a?</p>
+    </div>
+</body>
+</html>
